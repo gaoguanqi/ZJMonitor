@@ -83,7 +83,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IActivit
             int layoutResID = initView(savedInstanceState);
             //如果initView返回0,框架则不会调用setContentView(),当然也不会 Bind ButterKnife
             if (layoutResID != 0) {
-                setContentView(layoutResID);
+                setRootView(layoutResID);
                 //绑定到butterknife
                 mUnbinder = ButterKnife.bind(this);
             }
@@ -102,10 +102,14 @@ public abstract class BaseActivity extends AppCompatActivity implements IActivit
 
 
 
+        initData(savedInstanceState);
+    }
+
+    protected void setRootView(int layoutResID) {
+        setContentView(layoutResID);
         if(useTitleBar()){
             initTitleBar();
         }
-        initData(savedInstanceState);
     }
 
     protected void initTitleBar() {

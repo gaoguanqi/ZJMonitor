@@ -113,6 +113,7 @@ ext {
             "utilcode"                  : "com.blankj:utilcode:1.23.7",
             "banner"                  : "com.youth.banner:banner:1.4.10",
             "immersionbar"                  : "com.gyf.immersionbar:immersionbar:2.3.3",
-            "material-dialogs"                  : "com.afollestad.material-dialogs:core:0.9.6.0"
+            "material-dialogs"                  : "com.afollestad.material-dialogs:core:0.9.6.0",
+            "multiple-status-view"                  : "com.classic.common:multiple-status-view:1.6"
     ]
 }
