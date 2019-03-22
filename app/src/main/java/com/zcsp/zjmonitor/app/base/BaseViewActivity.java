@@ -41,6 +41,7 @@ public abstract class BaseViewActivity<P extends IPresenter> extends BaseActivit
             }
         }
     }
+
     protected void onClickRetry() {
         ToastUtils.showShort("刷新数据");
     }
